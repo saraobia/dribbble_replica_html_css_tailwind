@@ -17,7 +17,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- style -->
   <link rel="stylesheet" href="style.css">
@@ -25,7 +25,56 @@
 </head>
 
 <body>
-  <h1>prova</h1>
+  <!-- Header -->
+  <header>
+    <!-- nav -->
+    <nav class="px-[24px] flex items-center justify-between border border-red-600 h-[100px]">
+      <!-- container bar + logo -->
+      <div class="h-[50px] flex items-center">
+        <!-- bar -->
+        <i class="fa-solid fa-bars-staggered text-[24px] min-[950px]:hidden "></i>
+        <!-- logo -->
+        <a href=""> <img class="h-[30px] ml-[20px] hover:opacity-[.7] transition duration-300 ease-in-out"
+            src="assets/logo.png" alt="logo Dribble"> </a>
+        <!-- menu hidden sx -->
+
+        <ul class=" hidden min-[950px]:flex">
+          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+              href="">Find talent</a></li>
+          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+              href="">Inspiration</a></li>
+          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+              href="">Learn design <i class="text-[10px] ml-[2px] fa-solid fa-chevron-down"></i></a></li>
+          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+              href="">Jobs</a></li>
+          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+              href="">GoPro</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu dx -->
+      <ul class="flex">
+        <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out">
+          <a href="#">
+            <div class="flex items-center border border-red-400">
+              <i
+                class="fa-solid fa-magnifying-glass text-[20px] hover:opacity-[.7] transition duration-300 ease-in-out"></i>
+              <input type="text" class="hidden min-[950px]:flex py-[10px] rounded-[50px]">
+            </div>
+          </a>
+        </li>
+
+        <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
+            href="#">Login</a></li>
+
+        <li class="ml-[20px]">
+          <a href="#"
+            class="px-[26px] py-[13px] bg-[#151426] rounded-[50px] text-white text-[15px] font-[500] hover:opacity-[.7] transition duration-300 ease-in-out">Iscriviti</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
 
 </body>
 
