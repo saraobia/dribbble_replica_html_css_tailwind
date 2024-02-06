@@ -3,3 +3,26 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #151426;
 }
+
+@keyframes bgColorChange {
+  0% {
+    background-color: #D9D1E6;
+  }
+
+  33% {
+    background-color: #A5B4E3;
+  }
+
+  66% {
+    background-color: #F1C7D6;
+  }
+
+  100% {
+    background-color: #D9D1E6;
+  }
+}
+
+.animate-bg-color-change {
+  animation: bgColorChange 9s infinite;
+  transition: background-color 0.3s ease-in-out;
+}
