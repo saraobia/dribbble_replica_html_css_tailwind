@@ -32,15 +32,15 @@ The project is organized in the following main files and directories:
 ## Usage
 The project is primarily static. To contribute or extend functionalities, you can explore the HTML and CSS structure and add the backend or new features according to your needs.
 
-## Risorse Esterne
+## External Resources
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Font Awesome Icons](https://fontawesome.com/icons)
 - [Google Fonts](https://fonts.google.com/)
 
-## Autori
+## Authors
 - [Sara Obialero](https://github.com/saraobia)
 
-## Licenza
+## License
 This project is distributed under the [MIT License](LICENSE).
 
 
