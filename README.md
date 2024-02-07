@@ -1,5 +1,7 @@
 # dribbble_replica_html_css_tailwind
 
+[Image Alt Text](assets/preview.png)
+
 ## Description
 This project is a replica of the landing page of the official [Dribbble](https://dribbble.com/) website, focusing on the visual aspects. It's important to note that the backend and functionalities are not implemented at the moment; the project primarily focuses on the HTML structure using Tailwind CSS and some CSS animations.
 
