@@ -1,7 +1,4 @@
-<!-- TO DO:
-  1-modificare i margin bottom in margin top
-  2-vedere logo su nav
-  3- barra di ricerca
+<!-- TO DO
   4- ani gallerie
  -->
 
@@ -14,6 +11,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- cdn -->
   <!-- tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -38,21 +36,22 @@
   <!-- Header -->
   <header>
     <!-- nav -->
-    <nav class="px-[24px] flex items-center justify-between h-[100px]">
+    <nav class="px-[24px] flex items-center h-[100px] justify-between min-[1399px]:px-[50px]">
 
-      <!-- Container bar + logo -->
-      <div class="h-[50px] flex items-center">
+      <!-- Menu sx-->
+      <div class="flex">
         <!-- bar -->
-        <i class="fa-solid fa-bars-staggered text-[24px] min-[950px]:hidden "></i>
+        <i class="fa-solid fa-bars-staggered text-[24px] min-[950px]:hidden"></i>
         <!-- logo dribbble -->
-        <!-- TO DO: da 1500px aggiungere centrale su navbar -->
-        <a href=""> <img class="h-[30px] ml-[10px] hover:opacity-[.7] transition duration-300 ease-in-out"
+        <a href="/" aria-label="back to home"> <img
+            class="h-[30px] ml-[20px] hover:opacity-[.7] transition duration-300 ease-in-out min-[950px]:ml-[0] min-[1399px]:hidden"
             src="assets/logo.png" alt="logo Dribble"> </a>
-
         <!-- Menu hidden sx -->
-        <ul class=" hidden min-[950px]:flex">
-          <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
-              href="">Find talent</a></li>
+        <ul class=" hidden min-[950px]:flex items-center">
+          <li
+            class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out min-[1399px]:ml-[0]">
+            <a href="">Find talent</a>
+          </li>
           <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
               href="">Inspiration</a></li>
           <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out"><a
@@ -64,30 +63,45 @@
         </ul>
       </div>
 
+      <!-- Logo hidden  -->
+      <div class="hidden min-[1399px]:flex">
+        <a href="/" aria-label="back to home"> <img
+            class="h-[30px] ml-[20px] hover:opacity-[.7] transition duration-300 ease-in-out min-[950px]:ml-[0]"
+            src="assets/logo.png" alt="logo Dribble"> </a>
+      </div>
+
       <!-- Menu dx -->
-      <ul class="flex items-center">
-        <!-- searchbar -->
-        <li class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out">
-          <a href="#">
-            <div class="flex items-center">
-              <i
-                class="fa-solid fa-magnifying-glass text-[20px] hover:opacity-[.7] transition duration-300 ease-in-out"></i>
-              <input type="text" class="hidden min-[1059px]:flex py-[10px] rounded-full">
-            </div>
-          </a>
-        </li>
-        <!-- Login -->
-        <li
-          class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out hidden min-[950px]:flex">
-          <a href="#">Log In</a>
-        </li>
-        <!-- cta - signup -->
-        <li class="py-[10px] ml-[20px]">
-          <a href="#"
-            class="px-[26px] py-[15px] bg-[#151426] rounded-full text-white text-[15px] font-[500] hover:opacity-[.7] transition duration-300 ease-in-out">Sign
-            Up</a>
-        </li>
-      </ul>
+      <div class="flex">
+        <ul class="flex items-center">
+          <!-- searchbar -->
+          <li class="ml-[25px]">
+            <a href="#">
+              <div class="flex items-center relative">
+                <!-- search  -->
+                <i
+                  class="fa-solid fa-magnifying-glass text-[20px] hover:opacity-[.7] transition duration-300 ease-in-out min-[1059px]:hidden"></i>
+                <!-- placeholder: search hidden -->
+                <i
+                  class="fa-solid fa-magnifying-glass hidden min-[1059px]:flex text-[15px] text-gray-400 absolute left-[20px] z-10"></i>
+                <input type="text"
+                  class="hidden min-[1059px]:flex py-[10px] rounded-full text-[14px] font-[500] outline-none pl-[40px] placeholder-gray-400"
+                  placeholder="search...">
+              </div>
+            </a>
+          </li>
+          <!-- Login -->
+          <li
+            class="ml-[25px] text-[14px] font-[600] hover:opacity-[.7] transition duration-300 ease-in-out hidden min-[950px]:flex">
+            <a href="#">Log In</a>
+          </li>
+          <!-- cta - signup -->
+          <li class="py-[10px] ml-[20px]">
+            <a href="#"
+              class="px-[26px] py-[15px] bg-[#151426] rounded-full text-white text-[14px] font-[500] hover:opacity-[.7] transition duration-300 ease-in-out">Sign
+              Up</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -98,16 +112,17 @@
       <!-- jumbo - text -->
       <div class="flex justify-center items-center">
         <!-- jumbo content -->
-        <div class="mx-[20px] my-[80px] min-[768px]:mx-[40px] min-[900px]:w-[800px] text-center">
+        <div class="mx-[20px] mt-[80px] min-[768px]:mx-[40px] min-[900px]:w-[800px] text-center">
           <!-- cta -->
-          <div class="p-[10px] mb-[40px] ">
+          <div class="pt-[8px]">
             <a href="#"
-              class="px-[20px] py-[10px] rounded-full text-[17px] font-serif font-[500] animate-bg-color-change hover:opacity-[.7] transition duration-300 ease-in-out">
+              class="px-[15px] py-[10px] rounded-full text-[17px] font-serif font-[500] animate-bg-color-change hover:opacity-[.7] transition duration-300 ease-in-out">
               Over 3 million ready-to-work creatives!
             </a>
           </div>
+
           <!-- text -->
-          <div class="mx-[10px] mt-[30px] min-[768px]:mx-[30px] ">
+          <div class="mx-[10px] mt-[40px] min-[768px]:mx-[30px] ">
             <h1 class="text-[48px] leading-[55px] font-serif min-[768px]:text-[70px] min-[768px]:leading-[80px] ">The
               world’s destination for design
             </h1>
@@ -130,7 +145,7 @@
       </div>
 
       <!-- jumbo - animate gallery -->
-      <div class="flex whitespace-nowrap overflow-x-hidden">
+      <div class="mt-[80px] flex whitespace-nowrap overflow-x-hidden">
         <!-- card 1 -->
         <div class="mx-[10px] relative">
           <!-- Img -->

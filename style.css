@@ -6,23 +6,31 @@ body {
 
 @keyframes bgColorChange {
   0% {
-    background-color: #D9D1E6;
-  }
-
-  33% {
-    background-color: #A5B4E3;
-  }
-
-  66% {
     background-color: #F1C7D6;
   }
 
-  100% {
+  20% {
     background-color: #D9D1E6;
+  }
+
+  40% {
+    background-color: #A5B4E3;
+  }
+
+  60% {
+    background-color: #f2fccf;
+  }
+
+  80% {
+    background-color: #fce69d;
+  }
+
+  100% {
+    background-color: #F1C7D6;
   }
 }
 
 .animate-bg-color-change {
-  animation: bgColorChange 9s infinite;
+  animation: bgColorChange 30s infinite;
   transition: background-color 0.3s ease-in-out;
 }
